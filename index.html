@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento</title>
+</head>
+<body onload="render()">
+    <input type="text" name="txtNome" id="txtNome" placeholder="Digite o nome do veículo" autocomplete="off">
+    <input type="text" name="txtPlaca" id="txtPlaca" placeholder="Digite o nome da placa" autocomplete="off">
+    <button id="cadastrar" onclick="cadastrarVeiculo()">Cadastrar</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Placa</th>
+                <th>Entrada</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="patio"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
